@@ -1,0 +1,47 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background: red;
+  -webkit-animation: colors 5s linear infinite reverse, bounce 3s linear infinite reverse;
+  margin: 250px;
+}
+
+@-webkit-keyframes colors {
+  0% {background-color:red;}
+  20% {background-color:orange;}
+  40% {background-color:yellow;}
+  60% {background-color:green; color:red}
+  80% {background-color:blue;}
+  100% {background-color:purple;}
+}
+
+@-webkit-keyframes bounce {
+	from {-webkit-transform: translateY(0);} 
+	to {-webkit-transform: translateY(400px);}
+}
+
+img{
+Position: absolute;
+left:0;
+bottom:0;
+width: 200px;
+height: 200px; 
+-webkit-transform: rotateY(180deg); 
+-webkit-animation: move 2s linear infinite alternate; 
+margin: 5px; 
+}
+
+@-webkit-keyframes move{
+/* 
+from {-webkit-transform: transformX(0px) scaleX(-1);}
+to {-webkit-transform: translateX (500px) scaleX(1);}
+ */
+ 50% {-webkit-transform:translate(500px, 0);}
+}
+
+
+
+
+

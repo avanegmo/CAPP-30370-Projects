@@ -1,0 +1,89 @@
+<html lang = "en">
+<head> 
+	<meta charset = "utf-8">
+	<title>Project 13</title> 
+	<style> 
+	html {margin: 2em; font-family: Helvetica, Arial, Sans-serif;}
+	</style> 
+</head> 
+<body> 
+	<header><h1>Project 13</h1></header> 
+
+<h2>Button One</h2>
+<button id ="one">Alert</button>
+<script>
+document.getElementById('one').addEventListener("click", function(e){
+	alert('You clicked a button'); 
+});
+</script>
+
+<h2>Button Two</h2>
+<button id="two">Prompt</button> 
+<script> 
+document.getElementById('two').addEventListener("click", function(e){
+	var input_name = prompt('What is your name?'); 
+	for(i=0; i <5; i++) {
+		console.log(input_name); 
+}
+});
+</script>
+
+<h2>Array of Colors</h2>
+<script>
+var i;
+var mycolors = new Array();
+mycolors[0] = "Red";
+mycolors[1] = "Orange";
+mycolors[2] = "Yellow";
+mycolors[3] = "Green"; 
+mycolors[4] = "Blue";
+mycolors[5] = "Indigo";
+mycolors[6] = "Violet"; 
+
+for (i=0;i<mycolors.length;i++)
+{
+document.write(mycolors[i] + "<br>");
+}
+</script>
+
+<h2>Mouse Events</h2>
+<div class = "mouseEvents" id = "box"></div>
+<style> 
+.mouseEvents{
+width: 100px; 
+height: 100px; 
+background-color: black; 
+</style>
+
+<script>
+
+var box= document.getElementById('box'); 
+	box.addEventListener("mouseover", function() {
+		console.log('Mouse entered the box'); 
+}); 
+	box.addEventListener("mouseout", function() {
+		console.log('Mouse left the box');
+}); 
+</script>
+
+<h2>Text Boxes and Buttons</h2>
+<label for="first">first</label>
+<input type="text" id="first" value="" /><br/> 
+
+<label for="second">second</label>
+<input type ="text" id="second" value =""/><br/>
+
+<input type="button" id="check" value="check" /><br/>
+
+<script>
+var first = document.getElementById( 'first' ); 
+var second = document.getElementById( 'second' ); 
+var check = document.getElementById ( 'check' );
+check.addEventListener("click", function(e){
+	if (first.value == second.value){ 
+		alert('The first and second value are equal.'); 
+};
+</script>
+
+</body> 
+</html>

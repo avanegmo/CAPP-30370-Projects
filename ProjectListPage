@@ -1,0 +1,19 @@
+<html>
+
+<head> 
+<meta charset="utf-8">
+<title>Project List Page</title> 
+</head> 
+<body> 
+		<h1>Anna VanEgmond Project List Page</h1>
+		<ol> 
+			<li><a href="Project1.html">Project 1</a></li> 
+			<li><a href="project2.html">Project 2</a></li>
+			<li><a href="project3.html">Project 3</a></li> 
+			<li><a href="project4.html">Project 4</a></li> 
+			<li><a href="Project5.html">Project 5</a></li>
+			<li><a href="project6.html">Project 6</a></li>
+		</ol>
+
+</body>
+</html> 

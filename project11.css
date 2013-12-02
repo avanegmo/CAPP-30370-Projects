@@ -1,0 +1,53 @@
+h1{
+color:red;
+}
+
+.pic1 {
+width: 150px; 
+height: 150px; 
+}
+.pic1:hover{
+-webkit-transform: rotate(180deg); 
+}
+
+.pic2{
+width: 150px; 
+height: 150px; 
+}
+.pic2:hover{
+-webkit-transform: scale(2);
+}
+
+.pic3:{
+width:150px; 
+height:150px; 
+}
+.pic3:hover{
+-webkit-transform: skewX(20deg); 
+}
+
+.box1{
+width:100px; 
+height:100px; 
+padding:1em;
+background-color:orange; 
+transition:1s ease-in-out; 
+-webkit-box-shadow: 0 0 10px 10px #000;
+}
+.box1:hover{
+background-color:black;
+-webkit-box-shadow: 0 0 10px 10px #ff8c00;
+}
+
+.box2{
+width:100px; 
+height:100px;
+padding:1em; 
+background-color:black; 
+}
+.box2:hover{
+-webkit-transform:rotate(-25deg) scale(1.05); 
+}
+
+
+

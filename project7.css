@@ -1,0 +1,42 @@
+body{
+	font-size:100%;
+	font-family:"Comic Sans MS";
+	background: grey url(http://highly-favored.org/wp-content/gallery/gallery-2012/photodune-1324773-bokeh-vibrant-yellow-background-with-blurry-lights-l.jpg) repeat center fixed; 
+}
+
+h1, h2{
+	color: #FF8C00
+}
+
+ul{
+	color: #FF8C00
+}
+
+.Summary{
+max-width: 100%;
+}
+
+.Lindsay{
+max-width: 100%;
+}
+
+@media screen and (min-width: 400px){
+nav {float: left; width: 20%; border: 1px solid orange;}
+main{float: right; width: 70%; border: 1px solid orange;}
+}
+
+@media screen and (min-width: 800px){
+.Cover{
+float: right; 
+max-width: 40%;
+margin: 1 em 5%;
+}
+
+.Lindsay{
+float: right; 
+max-width: 40%;
+margin: 1em 5%;
+}
+}
+
+

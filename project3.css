@@ -1,0 +1,56 @@
+body{
+	color: #FFFAF0;
+	background-color: #9932CC;
+	margin: 0 15%; 
+	font-family: helevitca;
+	text-align: center;
+}
+
+img {
+	display:block;
+	margin:0 auto; 
+}
+
+h1{
+color: #FFFAF0;
+text-align: center; 
+font-family: helevitca; 
+font-weight: bold;
+margin top: 30px; 
+}
+
+h2{
+text-align:center
+}
+
+ol{
+list-style-position:inside;
+text-align:center
+}
+
+ul{
+list-style-position:inside;
+text-align:center
+}
+
+p{
+text-indent:25px;
+}
+
+th, td{ 
+border: 3px dashed navy
+}
+ 
+table{
+margin:auto;
+}
+
+.links{
+text-align:center
+}
+
+
+form{
+margin:auto;
+border: 3px dashed navy;
+}

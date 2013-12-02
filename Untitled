@@ -1,0 +1,152 @@
+<!doctype html>
+<!--[if lt IE 8]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project 8">
+  <title>Project 8</title>
+  <style>
+
+    * {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+    html {width:100%; margin:0; padding:0; font-size:100%;}
+    body {width:100%; margin:0; padding:0; color:#333; font:1em/1.5em "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+    article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display:block;}
+	img {max-width:100%;}
+.site {clear:both;}
+
+.col {}
+
+@media screen and (min-width: 500px) { 
+	.alpha {padding: 1em;} 
+
+	.siteheader {text-align: center; margin: 1em; padding: 40px; background-color:#ddd; border: 1px solid black;}
+
+	.row1 {overflow:hidden; clear:both;}
+	.row1 div {float:left; width:45%;}
+	.row1 .col1 {margin-right:2%;}
+	.row1 .col2 {margin-right:2%;}
+
+	.row2 {overflow:hidden; clear:both;}
+	.row2 div {float:left; width:30%;}
+	.row2 .col3 {margin-right:2%;}
+	.row2 .col4 {margin-right:2%;}
+	.row2 .col5 {margin-right:2%;}
+
+	.row3 {overflow:hidden; clear:both;}
+	.row3 div {float:left; width:48%;}
+	.row3 .col6 {margin-right:2%;}
+	.row3 .col7 {margin-right:2%;}
+	.row3 .col8 {margin-right:2%;}
+	.row3 .col9 {margin-right:2%;}
+
+	.site {padding: 1em; position: relative; text-align: left;}
+}
+
+
+@media screen and (min-width: 900px) {
+	.alpha {padding: 1em;} 
+
+	.siteheader {text-align: center; margin: 1em; padding: 40px; background-color:#ddd; border: 1px solid black;}
+
+	.row1 {overflow:hidden; clear:both;}
+	.row1 div {float:left; width:45%;}
+	.row1 .col1 {margin-right:2%;}
+	.row1 .col2 {margin-right:2%;}
+
+	.row2 {overflow:hidden; clear:both;}
+	.row2 div {float:left; width:30%;}
+	.row2 .col3 {margin-right:2%;}
+	.row2 .col4 {margin-right:2%;}
+	.row2 .col5 {margin-right:2%;}
+
+	.row3 {overflow:hidden; clear:both;}
+	.row3 div {float:left; width:20%;}
+	.row3 .col6 {margin-right:2%;}
+	.row3 .col7 {margin-right:2%;}
+	.row3 .col8 {margin-right:2%;}
+	.row3 .col9 {margin-right:2%;}
+
+	.site {padding: 1em; position: relative; text-align: left;}
+
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <header id = "header" class = "siteheader">
+    <h1>Project 8</h1>
+  </header>
+
+  <main class="alpha" role="main">
+
+<div class="row1">
+    <div class ="col col1">
+      <h2>Title</h2>
+      <img src="http://placehold.it/500x250" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque, nibh ac tempor interdum, sem turpis pellentesque felis, quis porta magna purus nec magna. Morbi euismod feugiat scelerisque. Integer a odio est. Proin id dictum erat.</p>
+    </div>
+    <div class = "col col2">
+      <h2>Title</h2>
+      <img src="http://placehold.it/500x250" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque, nibh ac tempor interdum, sem turpis pellentesque felis, quis porta magna purus nec magna. Morbi euismod feugiat scelerisque.</p>
+    </div>
+</div>
+
+<div class = "row2">  
+  <div class = "col col3">
+      <h2>Title</h2>
+      <img src="http://placehold.it/250x150" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque, nibh ac tempor interdum, sem turpis pellentesque felis, quis porta magna purus nec magna.</p>
+    </div>
+    <div class = "col col4">
+      <h2>Title</h2>
+      <img src="http://placehold.it/250x150" alt="">
+      <p>Mauris pellentesque, nibh ac tempor interdum, sem turpis pellentesque felis, quis porta magna purus nec magna.</p>
+    </div>
+    <div class = "col col5">
+      <h2>Title</h2>
+      <img src="http://placehold.it/250x150" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque, sem turpis pellentesque felis, quis porta magna purus nec magna.</p>
+    </div>
+</div>
+
+<div class = "row3">
+    <div class = "col col6">
+      <h2>Title</h2>
+      <img src="http://placehold.it/100x100" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class = "col col7">
+      <h2>Title</h2>
+      <img src="http://placehold.it/100x100" alt="">
+      <p>Mauris pellentesque, nibh ac tempor interdum, sem turpis pellentesque felis</p>
+    </div>
+    <div class = "col col8">
+      <h2>Title</h2>
+      <img src="http://placehold.it/100x100" alt="">
+      <p>Integer a odio est. Proin id dictum erat.</p>
+    </div>
+    <div class = "col col9">
+      <h2>Title</h2>
+      <img src="http://placehold.it/100x100" alt="">
+      <p>Mauris pellentesque, nibh ac tempor interdum.</p>
+    </div>
+</div>
+
+  </main>
+
+
+  <footer id = "site" class = "site">
+    <p class="copyright url fn org">
+      <a href="http://www.nd.edu/copyright/">Copyright</a> &copy; 2013
+      <a href="http://www.nd.edu" class="org">University of Notre Dame</a>
+    </p>
+  </footer>
+
+</body>
+</html>

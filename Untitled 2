@@ -1,0 +1,20 @@
+@-webkit-keyframes colors {
+  0% {background-color:red;}
+  20% {background-color:orange;}
+  40% {background-color:yellow;}
+  60% {background-color:green; color:red}
+  80% {background-color:blue;}
+  100% {background-color:purple;}
+
+.ball{
+z-index: 5; 
+width: 100px;
+height: 100px; 
+position: absolute; 
+top: 0px; 
+left: 50%; 
+background-image: -webkit- radial gradient(10% 24%, circle, 70%); 
+
+-webkit-animation: jump is infinite; 
+}
+

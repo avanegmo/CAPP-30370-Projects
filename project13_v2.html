@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1038.36">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;html lang = "en"&gt;</p>
+<p class="p1">&lt;head&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta charset = "utf-8"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;title&gt;Project 13&lt;/title&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;style&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>html {margin: 2em; font-family: Helvetica, Arial, Sans-serif;}</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;/style&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/head&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;body&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;header&gt;&lt;h1&gt;Project 13&lt;/h1&gt;&lt;/header&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;One&lt;/h2&gt;</p>
+<p class="p1">&lt;button id ="one"&gt;Alert&lt;/button&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">document.getElementById('one').addEventListener("click", function(e){</p>
+<p class="p1"><span class="Apple-tab-span">	</span>alert('You clicked a button');<span class="Apple-converted-space"> </span></p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Two&lt;/h2&gt;</p>
+<p class="p1">&lt;button id="two"&gt;Prompt&lt;/button&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;script&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">document.getElementById("two").addEventListener("click", function(e){</p>
+<p class="p1"><span class="Apple-tab-span">	</span>var input_name = prompt('What is your name?');<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>for(i=0; i &lt;5; i++) {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>console.log(input_name);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Array of Colors&lt;/h2&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">var i;</p>
+<p class="p1">var mycolors = new Array();</p>
+<p class="p1">mycolors[0] = "Red";</p>
+<p class="p1">mycolors[1] = "Orange";</p>
+<p class="p1">mycolors[2] = "Yellow";</p>
+<p class="p1">mycolors[3] = "Green";<span class="Apple-converted-space"> </span></p>
+<p class="p1">mycolors[4] = "Blue";</p>
+<p class="p1">mycolors[5] = "Indigo";</p>
+<p class="p1">mycolors[6] = "Violet";<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">for (i=0; i &lt; mycolors.length;i++)</p>
+<p class="p1">{</p>
+<p class="p1">document.write(mycolors[i] + "&lt;br&gt;");</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Mouse Events&lt;/h2&gt;</p>
+<p class="p1">&lt;div class = "box"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">.box {</p>
+<p class="p1">width: 100px;<span class="Apple-converted-space"> </span></p>
+<p class="p1">height: 100px;</p>
+<p class="p1">background-color: black;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">/*</p>
+<p class="p1">var box= document.getElementById('box');<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>box.addEventListener("", function() {</p>
+<p class="p1">});<span class="Apple-converted-space"> </span></p>
+<p class="p1">box.addEventListener("", function() {</p>
+<p class="p1">});</p>
+<p class="p1">*/<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Text Boxes and Buttons&lt;/h2&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+</body>
+</html>

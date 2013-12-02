@@ -1,0 +1,30 @@
+body{
+	color: #FFFAF0;
+	background-color: #9932CC;
+	margin: 0 15%; 
+	font-family: helevitca;
+}
+
+IMG.displayed {
+	display:block; 
+	margin-left:auto;
+	margin-right:auto; 
+
+
+}
+
+h1{
+color: #FFFAF0;
+text-align: center; 
+font-family: helevitca; 
+font-weight: bold;
+margin top: 30px; 
+}
+
+ol{
+text-align:center
+}
+
+ul{
+text-align:center
+}

@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript 1</title>
+  <style>
+    html {margin:2em; font-family:Helvetica, Arial, sans-serif;}
+    h1 {margin:0;}
+    h2 {color:#369;}
+  </style>
+</head>
+<body>
+  <header><h1>Javascript 1</h1></header>
+
+  <h2>Alert, Confirm, Console and Prompt</h2>
+  <script>
+  alert('hello world');
+  var foo = confirm('are you sure?');
+  var foo = prompt('How are you doing?');
+  console.log(foo);
+  </script>
+
+  <h2>Document Write</h2>
+  <script>
+  //document.write('Hello World<br>');
+  //document.write('Goodbye cruel world.');
+  </script>
+
+  <h2 id="headertag">getElementById</h2>
+  <script>
+  //var foo = document.getElementById('headertag');
+  //console.log(foo);
+  </script>
+
+  <h2>Variables</h2>
+  <script>
+  //var foo = 'Hello World';
+  //console.log(foo);
+/*
+  var my_custom_variable = 'hello';
+  var myCustomVariable = 'hello';
+  var myCustomvariable = 'hello';
+*/
+  </script>
+
+  <h2>Data Types</h2>
+  <script>
+  var number = 5;
+  var number = "5";
+  var my_boolean = true; // also false
+  var my_variable = null;
+  var my_empty_variable;
+  //console.log(my_empty_variable); // undefined
+
+  var my_array = [1, 2, 8, 99];
+  var my_other_array = ['Larry', 'Moe', 'Curley'];
+  //console.log(my_other_array);
+  //console.log(my_other_array.length); // 3
+  //console.log(my_other_array[1]); // Moe
+  </script>
+
+  <h2>Comparison Operators</h2>
+  <script>
+  // =, ==, ===, !=
+  //console.log("5" == 5); // true
+  //console.log("5" === 5); // false
+  //console.log(1 == true); // true
+  //console.log(1 === true); // false
+
+  </script>
+
+  <h2>If/Else</h2>
+  <script>
+  if(5 === "5"){
+    //console.log('true');
+  } else {
+    //console.log('false');
+  }
+  </script>
+
+  <h2>Loops</h2>
+  <script>
+
+  for(i = 0; i < 5; i++) { // i = i + 1
+    console.log('Hello');
+  }
+
+
+
+  var my_other_array = ['Larry', 'Moe', 'Curley'];
+  for(i = 0; i < my_other_array.length; i++) {
+    console.log(my_other_array[i]);
+  }
+
+
+  </script>
+
+  <h2>Functions</h2>
+  <script>
+  var my_number = 1;
+  function increment(val){
+    return ++val; // val = val + 1;
+  }
+  var foo = increment(my_number);
+  //console.log(foo);
+  </script>
+
+<!--
+  <h2>Window (Browser Object)</h2>
+  <script>
+
+  </script>
+-->
+
+  <h2>Events</h2>
+  <script>
+
+  </script>
+
+  <h2>Event Listeners</h2>
+  <button id="my_button">My Button</button>
+  <script>
+  var myButton = document.getElementById('my_button');
+  myButton.addEventListener("click", function(){
+    console.log('I was clicked');
+  });
+  </script>
+
+  <h2>Getting Values</h2>
+  <input type="text" id="my_input">
+  <button id="my_button2">My Button</button>
+  <script>
+  var my_input = document.getElementById('my_input');
+  var myButton2 = document.getElementById('my_button2');
+  myButton2.addEventListener("click", function(){
+    console.log(my_input.value);
+  });
+  </script>
+
+</body>
+<script src="script.js"></script>
+</html>

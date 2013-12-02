@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery - Nov 13 Examples</title>
+  <style>
+    html {margin:2em; font-family:Helvetica, Arial, sans-serif;}
+    h1 {margin:0;}
+    h2 {color:#369;}
+    .red {color:red;}
+    .green {color:green;}
+    .blue {color:blue;}
+    #animation-img {float:right;}
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+  <header><h1>jQuery - Nov 13 Examples</h1></header>
+
+  <p class="demo-p">Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <i>quis nostrud exercitation ullamco</i> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <b>aliquip ex ea commodo consequat</b>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <img src="http://placekitten.com/g/300/200" alt="A Kitten" class="demo-img">
+  <ul class="demo-list">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </ul>
+
+  <h2>Load/Ready</h2>
+
+  <h3>DOM Ready</h3>
+  <script>
+  //console.log(document.querySelectorAll('h2').length);
+  //console.log($('h2').length);
+  //console.log($('#kitten').attr('alt'));
+
+  // Fires as soon as the dom is loaded
+  jQuery(function($){
+    //console.log($('h2').length);
+/*
+    var $kitten = $('#kitten');
+    console.log($kitten.attr('alt'));
+    console.log($kitten.width());
+*/
+  });
+  </script>
+
+  <h3>Loaded</h3>
+  <script>
+  //Waits until all files are downloaded
+  $(window).load(function(){
+/*
+    var $kitten = $('#kitten');
+    console.log($kitten.attr('alt'));
+    console.log($kitten.width());
+*/
+  });
+  </script>
+  <img src="http://placekitten.com/g/300/200" alt="A Kitten" id="kitten">
+
+  <hr>
+
+  <h2>Advanced Selectors</h2>
+
+  <h3>Children</h3>
+  <script>
+  var $result = $('.demo-p').children();
+  console.log('Children:', $result.length);
+  </script>
+
+  <h3>Find</h3>
+  <script>
+  var $result = $('p').find('b');
+  console.log('Find:', $result.length);
+  </script>
+
+  <h3>Siblings</h3>
+  <script>
+  var $result = $('.demo-list').find('li').siblings();
+  console.log('Siblings:', $result.length);
+  </script>
+
+  <h3>Parent(s)</h3>
+  <script>
+  var $result = $('.demo-list').find('li').parent();
+  console.log('Parent:', $result);
+  </script>
+
+  <hr>
+
+  <h2>Content</h2>
+  <p class="content-p">Demo <em>paragraph</em> with <strong>some html</strong> inside.</p>
+
+  <h3>Text</h3>
+  <script>
+  var text = $('.content-p').text();
+  console.log('Get using text(): ', text);
+  $('.content-p').text('Hello <b>world</b>');
+  </script>
+
+  <h3>HTML</h3>
+  <script>
+  var text = $('.content-p').html();
+  console.log('Get using html(): ', text);
+  $('.content-p').html('Hello <b>world</b>');
+  </script>
+
+  <hr>
+
+  <h2>Prepending/Appending/Wrapping</h2>
+  <p class="prepend-p">Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <i>quis nostrud exercitation ullamco</i> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h3>Prepending</h3>
+  <script>
+  $('.prepend-p').prepend('<span class="green">This text was prepended.</span> ');
+  </script>
+
+  <h3>Appending</h3>
+  <script>
+  $('.prepend-p').append(' <span class="green">This text was appended.</span>');
+  </script>
+
+  <h3>Wrapping</h3>
+  <script>
+  $('.prepend-p').wrap('<div class="red"></div>');
+  </script>
+
+  <hr>
+
+  <h2>Insert Before/After</h2>
+  <p class="insert-p">Demo insert paragraph.</p>
+  <h3>Insert Before</h3>
+  <script>
+  $('.insert-p').before('<p>This paragraph was inserted before.</p>');
+  $('<p>This paragraph was inserted before.</p>').insertBefore('.insert-p');
+  </script>
+
+  <h3>Insert After</h3>
+  <script>
+  $('.insert-p').after('<p>This paragraph was inserted after.</p>');
+  $('<p>This paragraph was inserted after.</p>').insertAfter('.insert-p');
+  </script>
+
+  <hr>
+
+  <h2>Chaining</h2>
+  <p class="chaining-p">Demo paragraph with some <b>bold</b> text and some <i>italic</i> text and some <b>more bold text</b>.</p>
+
+  <script>
+  $('.chaining-p')
+    .css('color', 'red')
+    .prepend('The beginning. ')
+    .append(' The end.')
+      .find('i').css('font-size', '24px')
+  ;
+  </script>
+
+  <h3>end()</h3>
+  <script>
+  $('.chaining-p')
+    .css('color', 'red')
+    .prepend('The beginning. ')
+    .append(' The end.')
+      .find('i').css('font-size', '24px').end()
+    .css('color', 'blue')
+      .find('b').css('font-size', '40px').append(" I'm BOLD").end()
+    .append(' Really the end.')
+  ;
+  </script>
+
+
+</body>
+</html>

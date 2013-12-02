@@ -1,0 +1,102 @@
+<html lang = "en">
+<head> 
+	<meta charset = "utf-8">
+	<title>Project 13</title> 
+	<style> 
+	html {margin: 2em; font-family: Helvetica, Arial, Sans-serif;}
+	</style> 
+</head> 
+<body> 
+	<header><h1>Project 13</h1></header> 
+
+<h2>One</h2>
+<button id ="one">Alert</button>
+<script>
+document.getElementById('one').addEventListener("click", function(e){
+	alert('You clicked a button'); 
+});
+</script>
+
+<h2>Two</h2>
+<button id="two">Prompt</button> 
+<script> 
+document.getElementById('two').addEventListener("click", function(e){
+	var input_name = prompt('What is your name?'); 
+	for(i=0; i <5; i++) {
+		console.log(input_name); 
+}
+});
+</script>
+
+<h2>Button 1</h2>
+<input type="button" onclick="myFunctioning()" value="Alert" />
+<script>
+function myFunctioning()
+{
+alert("Warning: This is an alert!");
+}
+</script>
+
+<h2>Button 2</h2>
+<button onclick="myFunction()">Prompt</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x;
+
+var person=prompt("What is your name?","");
+
+if (person!=null)
+  {
+  x=person;
+  console.log(x); 
+  }
+}
+</script>
+
+
+<h2>Array of Colors</h2>
+<script>
+var i;
+var mycolors = new Array();
+mycolors[0] = "Red";
+mycolors[1] = "Orange";
+mycolors[2] = "Yellow";
+mycolors[3] = "Green"; 
+mycolors[4] = "Blue";
+mycolors[5] = "Indigo";
+mycolors[6] = "Violet"; 
+
+for (i=0;i<mycolors.length;i++)
+{
+document.write(mycolors[i] + "<br>");
+}
+</script>
+
+<h2>Mouse Events</h2>
+<div class = "mouseEvents"></div>
+<style> 
+.mouseEvents{
+width: 100px; 
+height: 100px; 
+background-color: black; 
+</style>
+
+<script>
+
+</script>
+
+<h2>Text Boxes and Buttons</h2>
+<button onclick="myFunction()">Check</button>
+<script>
+
+</script>
+
+
+
+</body> 
+</html>
+
